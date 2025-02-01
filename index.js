@@ -4,9 +4,10 @@
 const swap=(a,b)=>{
     a=a+b;
     // a=b-a
-    console.log(a)
+    // console.log(a)
+    b=a-b;
     a=a-b;
-    console.log(b)
+    console.log(a,b)
 }
 swap(3,2)
 
