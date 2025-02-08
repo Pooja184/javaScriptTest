@@ -94,5 +94,4 @@ vowels("awdiz")
 const duplicateArray=()=>{
     let arr=[3,5,2,1,2];
 
-
 }
