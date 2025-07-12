@@ -93,5 +93,29 @@ vowels("awdiz")
 //remove duplicates from an array
 const duplicateArray=()=>{
     let arr=[3,5,2,1,2];
+    let arr2=[arr[0]];
+    for(let i=0;i<=arr.length-1;i++){
+        console.log(arr[i+1]);
+        if(arr[i]!==arr[i+1]){
+            arr2.push(arr[i])
 
+        }
+        
+    }
+
+    console.log(arr2,"arr2")
+
+}
+duplicateArray()
+
+//remove dupliactes
+const removeDuplicates=()=>{
+    let arr=[3,5,2,1,2];
+    let arr2=[];
+    for(let i=0;i<=arr.length-1;i++){
+        if(!arr2.includes(arr[i])){
+            arr2.push(arr[i])
+        }
+    }
+    console.log(arr2)
 }
