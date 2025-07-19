@@ -24,3 +24,26 @@ const findEle = () => {
 };
 // console.log(findEle())
 
+const mergeArr=()=>{
+    //     Merge Two Arrays and Remove Duplicates
+    // Input: [1, 2, 3], [2, 3, 4]
+    // Output: [1, 2, 3, 4]
+    //  Use Set or object keys for uniqueness
+
+    let arr1=[1, 2, 3];
+    let arr2= [2, 3, 4];
+    let newArr=arr1.concat(arr2);
+    // console.log(newArr)
+    let uniqueArr=[];
+    for(let i=0;i<newArr.length;i++){
+        if(!uniqueArr.includes(newArr[i])){
+            uniqueArr.push(newArr[i])
+            // console.log(newArr[i])
+        }
+       
+    }
+    console.log(uniqueArr)
+
+}
+mergeArr()
+
