@@ -45,5 +45,27 @@ const mergeArr=()=>{
     console.log(uniqueArr)
 
 }
-mergeArr()
+// mergeArr()
+
+
+const binarySearch=()=>{
+  let arr=[1,2,3,4,5,6,7];
+  let target=6;
+
+  let left=0;
+  let right=arr.length-1;
+
+  while (left<=right) {
+    let middleIdx=Math.round(left+right)/2;
+    // console.log(middleIdx)
+    if (target===arr[middleIdx]) {
+      return middleIdx;
+    }else if(target>arr[middleIdx]){
+      left=middleIdx+1
+    }else if(target<arr[middleIdx]){
+      right=middleIdx-1;
+    }
+  }
+}
+console.log(binarySearch())
 
